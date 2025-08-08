@@ -1,0 +1,19 @@
+[init]
+	defaultBranch = master
+[user]
+	email = dgd@melmon.dev
+	name = melmon
+[core]
+	editor = vim
+	autocrlf = input
+[commit]
+	gpgsign = false
+[tag]
+	gpgSign = false
+[color "diff"]
+  meta = magenta
+  frag = cyan
+  old = red
+  new = green
+  commit = cyan
+  whitespace = reverse
