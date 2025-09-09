@@ -1,0 +1,13 @@
+@define-color fg            #cdd6f4;
+@define-color muted_fg      #aab4c4;
+@define-color bg_glass      rgba(9, 9, 24, 0.50);
+@define-color panel_border  rgba(40, 60, 80, 0.40);
+@define-color module_bg     rgba(15, 20, 30, 0.65);
+@define-color hover_bg      rgba(50, 70, 100, 0.70);
+@define-color focus_bg      rgba(30, 50, 80, 0.60);
+@define-color focus_border  rgba(100, 150, 220, 0.55);
+@define-color selection_bg  rgba(40, 60, 90, 0.80);
+@define-color selection_fg  #ffffff;
+@define-color destructive   #ff6b6b;
+@define-color success       #6bd48d;
+@define-color warning       #f2c94c;

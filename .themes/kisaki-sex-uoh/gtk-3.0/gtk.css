@@ -1,0 +1,234 @@
+@import "../colours.css";
+
+* {
+  font-family: "Hack Nerd Font Mono", monospace;
+  font-size: 16px;
+  color: @fg;
+}
+
+window,
+dialog,
+messagedialog,
+notebook,
+.view,
+.background,
+popover,
+tooltip {
+  background-color: @bg_glass;
+  color: @fg;
+  -gtk-icon-palette:
+    success @success,
+    warning @warning,
+    error @destructive;
+}
+
+decoration {
+  border: 1px solid @panel_border;
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.45),
+    0 1px 0 0 rgba(255, 255, 255, 0.02) inset;
+}
+
+/* ---------- Header bars / titlebars ---------- */
+headerbar,
+.titlebar {
+  background: @bg_glass;
+  padding: 2px;
+  border-bottom: 1px solid @panel_border;
+}
+
+headerbar .title,
+headerbar .subtitle {
+  color: @fg;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  background: @module_bg;
+  color: @fg;
+  border: 1px solid @panel_border;
+  padding: 6px 12px;
+  box-shadow: none;
+}
+
+button:hover {
+  background: @hover_bg;
+}
+button:active {
+  background: @focus_bg;
+}
+button:checked {
+  background: @focus_bg;
+}
+button:disabled {
+  opacity: 0.55;
+}
+
+button.suggested-action {
+  border-color: @focus_border;
+  box-shadow: 0 0 0 2px rgba(100, 150, 220, 0.12) inset;
+}
+
+button.destructive-action {
+  border-color: rgba(255, 107, 107, 0.45);
+}
+
+/* ---------- Entries, searches, spinbuttons ---------- */
+entry,
+spinbutton,
+searchentry,
+textview.view,
+combobox box {
+  background: @module_bg;
+  color: @fg;
+  border: 1px solid @panel_border;
+  padding: 6px 10px;
+}
+
+entry:focus,
+searchentry:focus,
+spinbutton:focus,
+textview.view:focus {
+  border-color: @focus_border;
+  box-shadow: 0 0 0 2px rgba(100, 150, 220, 0.1) inset;
+}
+
+selection,
+*:selected,
+treeview:selected,
+textview text:selected,
+entry selection,
+spinbutton selection {
+  background: @selection_bg;
+  color: @selection_fg;
+}
+
+/* ---------- Switches, checks, radios ---------- */
+switch {
+  background: @module_bg;
+  border: 1px solid @panel_border;
+  border-radius: 999px;
+}
+switch:checked {
+  background: @focus_bg;
+}
+
+check,
+radio {
+  color: @fg;
+}
+check:checked,
+radio:checked {
+  color: @selection_fg;
+  background: @focus_bg;
+  border: 1px solid @focus_border;
+  border-radius: 6px;
+}
+
+/* ---------- Sliders / scales ---------- */
+scale trough {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid @panel_border;
+  border-radius: 999px;
+  min-height: 6px;
+}
+scale highlight {
+  background: @focus_bg;
+  border-radius: 999px;
+}
+scale slider {
+  background: @module_bg;
+  border: 1px solid @panel_border;
+  border-radius: 999px;
+}
+
+/* ---------- Lists / rows / tabs ---------- */
+list,
+row,
+notebook > header {
+  background: transparent;
+  border-color: @panel_border;
+}
+
+row:hover,
+list row:hover,
+notebook tab:hover {
+  background: @hover_bg;
+}
+
+notebook tab:checked {
+  background: @focus_bg;
+  border-bottom: 2px solid @focus_border;
+}
+
+/* ---------- Popovers / menus ---------- */
+popover,
+popover.background,
+menu,
+menuitem,
+.context-menu,
+modelbutton {
+  background: @module_bg;
+  padding: 4px;
+  border: 1px solid @panel_border;
+}
+
+menuitem:hover,
+modelbutton:hover {
+  background: @hover_bg;
+}
+
+/* ---------- Tooltips ---------- */
+tooltip {
+  background: @module_bg;
+  padding: 2px;
+  border: 1px solid @panel_border;
+}
+
+/* ---------- Scrollbars ---------- */
+scrollbar {
+  background: transparent;
+}
+scrollbar trough {
+  background: rgba(255, 255, 255, 0.04);
+}
+scrollbar slider {
+  background: @module_bg;
+  padding: 2px;
+  border: 1px solid @panel_border;
+}
+scrollbar slider:hover {
+  background: @hover_bg;
+}
+
+/* ---------- Progress / levelbars ---------- */
+progressbar,
+levelbar {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px;
+  border: 1px solid @panel_border;
+}
+progressbar progress,
+levelbar block.filled {
+  background: @focus_bg;
+}
+
+/* ---------- Links ---------- */
+*:link {
+  color: #a8c5ff;
+}
+*:link:hover {
+  color: #d6e2ff;
+}
+
+/* ---------- Destructive/Warning text ---------- */
+.warning {
+  color: @warning;
+}
+.error,
+.destructive {
+  color: @destructive;
+}
+.success {
+  color: @success;
+}
