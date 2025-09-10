@@ -7,7 +7,9 @@
 @define-color focus_bg      rgba(30, 50, 80, 0.60);
 @define-color focus_border  rgba(100, 150, 220, 0.55);
 @define-color selection_bg  rgba(40, 60, 90, 0.80);
+@define-color gold_rich     #fadb6f;
+@define-color gold_light    #fffdc8;
 @define-color selection_fg  #ffffff;
 @define-color destructive   #ff6b6b;
 @define-color success       #6bd48d;
-@define-color warning       #f2c94c;
+@define-color warning       #f2b91c;

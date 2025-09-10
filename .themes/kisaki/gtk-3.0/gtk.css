@@ -193,7 +193,7 @@ scrollbar trough {
   background: rgba(255, 255, 255, 0.04);
 }
 scrollbar slider {
-  background: @module_bg;
+  background: @gold_rich;
   padding: 2px;
   border: 1px solid @panel_border;
 }
