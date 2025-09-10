@@ -1,3 +1,2 @@
 allow_images=true
 term=ghostty
-matching=fuzzy

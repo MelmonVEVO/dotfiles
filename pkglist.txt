@@ -1,0 +1,1 @@
+hyprland yazi thunar papirus-icon-theme nerd-fonts wofi hyprpolkitagent zoxide python3 vim neovim hyprcursor nodejs npm pyenv nwg-look hyprqt6engine uwsm libnewt go clang steam hyprlock feh ristretto htop fastfetch rmpc mpd fortune-mod cowsay nethack lolcat hypridle grim slurp xdg-desktop-portal-gtk pipewire wireplumber xdg-desktop-portal-hyprland gdb discord yt-dlp
