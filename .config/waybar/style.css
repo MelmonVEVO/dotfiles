@@ -1,0 +1,36 @@
+* {
+  font-family: "Hack Nerd Font Mono", monospace;
+  font-weight: bold;
+  font-size: 16px;
+  color: #cdd6f4;
+}
+
+/* Bar background */
+window#waybar {
+  background: rgba(9, 9, 24, 0.5); /* near-black blue */
+  border-bottom: 1px solid rgba(40, 60, 80, 0.4);
+}
+
+/* Generic module background */
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+  background: rgba(15, 20, 30, 0.65);
+  margin: 2px 4px;
+  padding: 0 10px;
+}
+
+/* Hover effect */
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#tray:hover {
+  background: rgba(40, 60, 90, 0.7);
+}
