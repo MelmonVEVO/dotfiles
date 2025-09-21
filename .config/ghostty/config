@@ -22,7 +22,7 @@
 font-family = Terminess Nerd Font Mono
 font-size = 24
 background = #090918
-background-opacity = 0.85
+background-opacity = 0.7
 background-blur = 64
 cursor-style-blink = true
 confirm-close-surface = false
