@@ -1,0 +1,41 @@
+{
+    "window.commandCenter": true,
+    "workbench.iconTheme": "chalice-icon-theme",
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.editor.decorations.colors": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.fontSize": 24,
+    "editor.fontFamily": "'Terminess Nerd Font Mono', monospace",
+    "workbench.layoutControl.enabled": false,
+    "explorer.confirmDelete": false,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "<leader>"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["leader", "b"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["H"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        {
+            "before": ["L"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "commands": ["workbench.action.togglePanel"]
+        },
+    ],
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 2,
+    "vim.useSystemClipboard": true,
+    "diffEditor.renderSideBySide": false,
+    "workbench.editor.empty.hint": "hidden",
+}
