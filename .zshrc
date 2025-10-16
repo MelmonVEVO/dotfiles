@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  zsh-vi-mode
+	zsh-vi-mode
 	git
 	zsh-autosuggestions
 	history
@@ -134,6 +134,7 @@ alias sl='sl | lolcat'
 alias neofetch='fastfetch'
 alias dotgit="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias hyprcfg="nvim ~/.config/hypr/hyprland.conf"
+alias gdvim="nvim --listen /tmp/godot.pipe"
 
 
 PATH=$PATH:$HOME/.local/bin
@@ -143,7 +144,8 @@ PATH=$PATH:$HOME/.local/bin
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
-export PATH=$PATH:$HOME/.npm-global/bin
+export JAVA_HOME=$HOME/.local/bin/jdk-17.0.16-full
+export PATH=$PATH:$HOME/.npm-global/bin:$JAVA_HOME/bin
 
 eval "$(zoxide init zsh)"
 
@@ -152,7 +154,7 @@ if uwsm check may-start; then
 fi
 
 # pnpm
-export PNPM_HOME="/home/alice/.local/share/pnpm"
+export PNPM_HOME="/home/kisaki/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;

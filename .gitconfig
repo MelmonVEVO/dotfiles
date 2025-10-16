@@ -17,3 +17,5 @@
   new = green
   commit = cyan
   whitespace = reverse
+[pull]
+	rebase = true
