@@ -1,0 +1,6 @@
+dconf
+mpd
+waybar
+hypridle
+hyprpaper
+hyprpolkitagent
