@@ -13,6 +13,7 @@ setopt APPEND_HISTORY
 setopt SHARE_HISTORY
 setopt EXTENDED_HISTORY
 setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
 setopt VI
 
 export EDITOR=nvim

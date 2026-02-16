@@ -1,12 +1,11 @@
 {
     "window.commandCenter": true,
-    "workbench.iconTheme": "chalice-icon-theme",
     "editor.minimap.enabled": false,
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": "on",
     "workbench.editor.decorations.colors": false,
     "editor.renderLineHighlight": "gutter",
-    "editor.fontSize": 24,
+    "editor.fontSize": 30,
     "editor.fontFamily": "'Terminess Nerd Font Mono', monospace",
     "workbench.layoutControl.enabled": false,
     "explorer.confirmDelete": false,
@@ -38,4 +37,6 @@
     "vim.useSystemClipboard": true,
     "diffEditor.renderSideBySide": false,
     "workbench.editor.empty.hint": "hidden",
+    "workbench.colorTheme": "Cursor Dark High Contrast",
+    "workbench.iconTheme": "chalice-icon-theme",
 }
