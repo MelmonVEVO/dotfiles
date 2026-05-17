@@ -7,7 +7,7 @@
 
 /* Bar background */
 window#waybar {
-  background: rgba(9, 9, 24, 0.5); /* near-black blue */
+  background: rgba(9, 9, 24, 0.7); /* near-black blue */
   border-bottom: 1px solid rgba(40, 60, 80, 0.4);
 }
 
@@ -19,7 +19,6 @@ window#waybar {
 #network,
 #pulseaudio,
 #tray {
-  background: rgba(15, 20, 30, 0.65);
   margin: 2px 4px;
   padding: 0 10px;
 }
